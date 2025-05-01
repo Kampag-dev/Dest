@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Colony</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Survival Colony</h1>
+        <div id="stats">
+            <p>Health: <span id="health">100</span></p>
+            <p>Morale: <span id="morale">100</span></p>
+            <p>Resources: <span id="resources">50</span></p>
+        </div>
+
+        <div id="actions">
+            <button id="gather-resources" onclick="gatherResources()">Gather Resources</button>
+            <button id="build-shelter" onclick="buildShelter()">Build Shelter</button>
+            <button id="rest" onclick="rest()">Rest</button>
+            <button id="fight" onclick="fightEnemy()">Fight Enemy</button>
+        </div>
+
+        <div id="enemy">
+            <p id="enemy-status">No enemy present</p>
+        </div>
+
+        <div id="log">
+            <p id="log-message">Welcome to the Survival Colony.</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+
+
+
+
+
